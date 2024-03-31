@@ -98,19 +98,17 @@ const Favorite: FunctionComponent<{
 
   return (
     <fetcher.Form method="post">
-      <Form method="post">
-        <button
-          aria-label={
-            favorite
-              ? "Remove from favorites"
-              : "Add to favorites"
-          }
-          name="favorite"
-          value={favorite ? "false" : "true"}
-        >
-          {favorite ? "★" : "☆"}
-        </button>
-      </Form>
+      <button
+        aria-label={
+          favorite
+            ? "Remove from favorites"
+            : "Add to favorites"
+        }
+        name="favorite"
+        value={favorite ? "false" : "true"}
+      >
+        {favorite ? "★" : "☆"}
+      </button>
     </fetcher.Form>
   );
 };
